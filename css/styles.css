@@ -1,0 +1,79 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+.clearfix::after{
+    display: table;
+    content:"";
+    clear:both;
+}
+
+body{
+    font-family: "Montserrat","Roboto","Ariel", sans-serif;
+    color: #333333;
+    font-size: 14px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+/* HEADER */
+.masthead{
+    min-height: 50px;
+    margin-top: 28px;
+    margin-bottom: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-link{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #95e1d3;
+    text-decoration: none;
+}
+
+.menu-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-link{
+    font-weight: 700;
+    line-height: 17px;
+    color:#95e1d3;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.2s linear;
+}
+
+.nav-link:hover {
+    padding-bottom: 10px;
+    border-bottom: 3px solid #f38181;
+    color:#f38181;
+    
+}
+
+.menu-item:not(:nth-child(5)){
+    margin-right: 56px;
+}
+
+/* HEADER DONE */
+
+/* SECTION SERVICES */
